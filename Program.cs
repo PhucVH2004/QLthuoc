@@ -3,15 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Configuration;
-using PharmacySystem.Views;
-using PharmacySystem.Views.LoginForm;
-using PharmacySystem.Presenters;
-using PharmacySystem.Views.RegisterForm;
-using System.IO;
-using PharmacySystem.Common;
 
-namespace PharmacySystem
+namespace Quan_ly_Ban_Thuoc
 {
     internal static class Program
     {
@@ -21,21 +14,11 @@ namespace PharmacySystem
         [STAThread]
         static void Main()
         {
-
-            string connectionString = ConfigurationManager.ConnectionStrings["PharmacyDb"].ConnectionString;
-
-            if (string.IsNullOrEmpty(connectionString))
-            {
-                MessageBox.Show("Connection string not found");
-                return;
-            }
+            string connectionString = @"Data Source=LAPTOP-H0J8DGVP\SQLEXPRESS;Initial Catalog=pharmacy;Integrated Security=True;TrustServerCertificate=True;";
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            
-            ILoginView loginView = new LoginView(connectionString);
-            Application.Run((Form) loginView);
+            Application.Run(new frmLogin(connectionString));
         }
     }
 }
-
