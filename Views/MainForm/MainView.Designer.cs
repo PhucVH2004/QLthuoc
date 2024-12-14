@@ -95,7 +95,7 @@
             this.cbMedicineGroup.FormattingEnabled = true;
             this.cbMedicineGroup.Location = new System.Drawing.Point(237, 21);
             this.cbMedicineGroup.Name = "cbMedicineGroup";
-            this.cbMedicineGroup.Size = new System.Drawing.Size(133, 25);
+            this.cbMedicineGroup.Size = new System.Drawing.Size(133, 29);
             this.cbMedicineGroup.TabIndex = 7;
             // 
             // btnDashboard
@@ -125,7 +125,7 @@
             // 
             this.txtSearch.Location = new System.Drawing.Point(376, 21);
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(367, 25);
+            this.txtSearch.Size = new System.Drawing.Size(367, 29);
             this.txtSearch.TabIndex = 4;
             // 
             // lbFullName
@@ -135,7 +135,7 @@
             this.lbFullName.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbFullName.Location = new System.Drawing.Point(994, 25);
             this.lbFullName.Name = "lbFullName";
-            this.lbFullName.Size = new System.Drawing.Size(118, 17);
+            this.lbFullName.Size = new System.Drawing.Size(154, 23);
             this.lbFullName.TabIndex = 3;
             this.lbFullName.Text = "Xin chào, username";
             // 
@@ -169,7 +169,7 @@
             this.lbLogo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbLogo.Location = new System.Drawing.Point(8, 21);
             this.lbLogo.Name = "lbLogo";
-            this.lbLogo.Size = new System.Drawing.Size(145, 21);
+            this.lbLogo.Size = new System.Drawing.Size(179, 28);
             this.lbLogo.TabIndex = 0;
             this.lbLogo.Text = "Pharmacy System";
             // 
@@ -239,7 +239,7 @@
             this.txtTotal.AutoSize = true;
             this.txtTotal.Location = new System.Drawing.Point(419, 16);
             this.txtTotal.Name = "txtTotal";
-            this.txtTotal.Size = new System.Drawing.Size(27, 17);
+            this.txtTotal.Size = new System.Drawing.Size(34, 23);
             this.txtTotal.TabIndex = 1;
             this.txtTotal.Text = "0 đ";
             // 
@@ -249,7 +249,7 @@
             this.txtChange.AutoSize = true;
             this.txtChange.Location = new System.Drawing.Point(419, 62);
             this.txtChange.Name = "txtChange";
-            this.txtChange.Size = new System.Drawing.Size(27, 17);
+            this.txtChange.Size = new System.Drawing.Size(34, 23);
             this.txtChange.TabIndex = 1;
             this.txtChange.Text = "0 đ";
             // 
@@ -259,7 +259,7 @@
             this.txtVAT.AutoSize = true;
             this.txtVAT.Location = new System.Drawing.Point(419, 37);
             this.txtVAT.Name = "txtVAT";
-            this.txtVAT.Size = new System.Drawing.Size(27, 17);
+            this.txtVAT.Size = new System.Drawing.Size(34, 23);
             this.txtVAT.TabIndex = 1;
             this.txtVAT.Text = "0 đ";
             // 
@@ -270,7 +270,7 @@
             this.label3.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.label3.Location = new System.Drawing.Point(15, 35);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(76, 19);
+            this.label3.Size = new System.Drawing.Size(101, 25);
             this.label3.TabIndex = 0;
             this.label3.Text = "VAT (10%)";
             // 
@@ -281,7 +281,7 @@
             this.label1.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.label1.Location = new System.Drawing.Point(15, 61);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(71, 19);
+            this.label1.Size = new System.Drawing.Size(93, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Tạm tính:";
             // 
@@ -292,7 +292,7 @@
             this.label2.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.label2.Location = new System.Drawing.Point(15, 14);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(106, 19);
+            this.label2.Size = new System.Drawing.Size(136, 25);
             this.label2.TabIndex = 0;
             this.label2.Text = "Tổng hóa đơn:";
             // 
@@ -319,6 +319,7 @@
             this.Delete});
             this.CartItemsDataGrid.Location = new System.Drawing.Point(749, 72);
             this.CartItemsDataGrid.Name = "CartItemsDataGrid";
+            this.CartItemsDataGrid.RowHeadersWidth = 51;
             this.CartItemsDataGrid.RowTemplate.Height = 30;
             this.CartItemsDataGrid.Size = new System.Drawing.Size(506, 336);
             this.CartItemsDataGrid.TabIndex = 9;
@@ -328,6 +329,7 @@
             // 
             this.Index.FillWeight = 31.81985F;
             this.Index.HeaderText = "#";
+            this.Index.MinimumWidth = 6;
             this.Index.Name = "Index";
             this.Index.ReadOnly = true;
             // 
@@ -335,6 +337,7 @@
             // 
             this.dgvCode.FillWeight = 31.0732F;
             this.dgvCode.HeaderText = "id";
+            this.dgvCode.MinimumWidth = 6;
             this.dgvCode.Name = "dgvCode";
             this.dgvCode.ReadOnly = true;
             // 
@@ -342,6 +345,7 @@
             // 
             this.dgvName.FillWeight = 90.28855F;
             this.dgvName.HeaderText = "Tên";
+            this.dgvName.MinimumWidth = 6;
             this.dgvName.Name = "dgvName";
             this.dgvName.ReadOnly = true;
             // 
@@ -349,12 +353,14 @@
             // 
             this.dgvQuantity.FillWeight = 18.64259F;
             this.dgvQuantity.HeaderText = "SL";
+            this.dgvQuantity.MinimumWidth = 6;
             this.dgvQuantity.Name = "dgvQuantity";
             // 
             // dgvPrice
             // 
             this.dgvPrice.FillWeight = 50.57392F;
             this.dgvPrice.HeaderText = "Giá";
+            this.dgvPrice.MinimumWidth = 6;
             this.dgvPrice.Name = "dgvPrice";
             this.dgvPrice.ReadOnly = true;
             // 
@@ -362,6 +368,7 @@
             // 
             this.dgvAmount.FillWeight = 46.31463F;
             this.dgvAmount.HeaderText = "S.tiền";
+            this.dgvAmount.MinimumWidth = 6;
             this.dgvAmount.Name = "dgvAmount";
             this.dgvAmount.ReadOnly = true;
             // 
@@ -417,7 +424,7 @@
             // 
             // MainView
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.ClientSize = new System.Drawing.Size(1255, 618);
